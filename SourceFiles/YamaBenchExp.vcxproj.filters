@@ -13,5 +13,88 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\control">
+      <UniqueIdentifier>{6b8b8e16-730b-470c-8f3f-bbbc8fa3fd34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{a96f54b0-1362-4dec-a975-faad5ec083de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hardware">
+      <UniqueIdentifier>{71a6cfb8-a51a-40c2-acc1-667e26135476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\control">
+      <UniqueIdentifier>{cdf4eefd-fd36-4adb-9951-d65ae1703bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\system">
+      <UniqueIdentifier>{6db6c0c3-6115-4c06-96c6-a6844fcf2cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hardware">
+      <UniqueIdentifier>{b1407777-a34d-4ae7-9d9a-946330d06ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\parameters">
+      <UniqueIdentifier>{6ff9bfcd-fc23-493e-884d-1f6a46f1dddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\references">
+      <UniqueIdentifier>{76490c5f-7450-4d67-89cc-78359ee2c4c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="system_data.c">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system_fsm.c">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="motor_enc.c">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="motor_pem.c">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="setup_adc.c">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="current_ctrl.c">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_ctrl.c">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl_math.c">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="main_exp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ctrl_math.h">
+      <Filter>Header Files\control</Filter>
+    </ClInclude>
+    <ClInclude Include="current_ctrl.h">
+      <Filter>Header Files\control</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_ctrl.h">
+      <Filter>Header Files\control</Filter>
+    </ClInclude>
+    <ClInclude Include="motor_enc.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="motor_pem.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="setup_adc.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="system_data.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system_fsm.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="data\Rfreqref.h">
+      <Filter>Resource Files\references</Filter>
+    </ClInclude>
+    <ClInclude Include="data\Rtimeref.h">
+      <Filter>Resource Files\references</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
