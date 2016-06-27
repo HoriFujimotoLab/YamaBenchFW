@@ -2,7 +2,7 @@
 LIB	""	# Create:Wed Jun 08 18:11:47 2016
 OBJ	""	# Create:Wed Jun 08 18:11:47 2016
 HEADER	""	# Create:Wed Jun 08 18:11:47 2016
-SRC	"main_exp.c"	# Create:Wed Jun 08 18:11:47 2016
+SRC	"ctrl_math.c" "current_ctrl.c" "main_exp.c" "motion_ctrl.c" "motor_enc.c" "motor_pem.c" "setup_adc.c" "system_data.c" "system_fsm.c"	# "main_exp.c":Mon Jun 27 22:03:58 2016
 [CONFIGURE]
 PEOS_VER	"1_16"	# Create:Wed Jun 08 18:11:47 2016
 PROTECT	"OFF"	# Create:Wed Jun 08 18:11:47 2016

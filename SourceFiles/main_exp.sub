@@ -1,4 +1,12 @@
 EXTLIBS	+= 
 EXOBJS	+= 
-OBJS	+= main_exp.obj
+OBJS	+= ctrl_math.obj current_ctrl.obj main_exp.obj motion_ctrl.obj motor_enc.obj motor_pem.obj setup_adc.obj system_data.obj system_fsm.obj
+ctrl_math.obj: 
+current_ctrl.obj: 
 main_exp.obj: 
+motion_ctrl.obj: 
+motor_enc.obj: 
+motor_pem.obj: 
+setup_adc.obj: 
+system_data.obj: 
+system_fsm.obj: 
