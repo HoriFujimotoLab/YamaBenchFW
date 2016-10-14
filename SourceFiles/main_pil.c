@@ -55,44 +55,9 @@ void system_tint0(void)
 	// TEST CODE
 	// ---------
 
-	// SENSOR READ
-	motor_enc_elec(&theta_e);
-	stage_lin_read(&pos_t, &vel_t, &vel_ta);
-	stage_enc_read(&theta_s, &omega_s, &omega_sa);
-	motor_enc_read(&theta_m, &omega_m, &omega_ma);
-	stage_adc_read(0, &vdc_ad, &idc_ad, &iu_ad, &iw_ad);
-	stage_adc_read(1, &disp_s1, &disp_s2, &disp_m1, &disp_m2);
-	stage_adc_read(2, &acc_mx, &acc_tx, &acc_tz, &acc_sx);
-
-	// MOTION CTRL
-	if (sysmode_e == SYS_INI)
-	{
-		if (set > 0 && calib != 1)	 	 { vref = VSET; }
-		if (home_ad > 0.5 && calib != 1) { vref = 0; system_fsm_reset(); calib = 1; }
-		if (pos_t < set && calib == 1)	 { vref = -VSET; }
-		if (pos_t > set && calib == 1)   { vref = 0; set = -1; calib = 0; }
-		if (msr >= 0 && msr < NROFT)	 { msr++; }
-		motion_ctrl_vpi(vref, omega_ma, &iq_ref);
-		//iq_ref = vref;
-	}
-	if (sysmode_e == SYS_RUN)
-	{
-		if (msr >= 0 && msr < NROFT) { motion_ctrl_ref(reftype_e, Aref, Fref, &iq_ref); msr++; }
-		else	 					 { motion_ctrl_ref(REF_OFF, Aref, Fref, &iq_ref); }
-	}
-
-	// DRIVE CONTROL
-	if (sysmode_e == SYS_INI || sysmode_e == SYS_RUN)
-	{
-		drive_ctrl_uw2ab(iu_ad, iw_ad, &ia_ad, &ib_ad);
-		drive_ctrl_ab2dq(ia_ad, ib_ad, theta_e, &id_ad, &iq_ad);
-		drive_ctrl_zcpi(iq_ref, id_ad, iq_ad, &vd_ref, &vq_ref);
-		drive_ctrl_dec(omega_ma, id_ad, iq_ad, &vd_ref, &vq_ref);
-		drive_ctrl_dq2ab(vd_ref, vq_ref, theta_e, &va_ref, &vb_ref);
-		drive_ctrl_ab2uvw(va_ref, vb_ref, &vu_ref, &vv_ref, &vw_ref);
-		motor_inv_pwm(vu_ref, vv_ref, vw_ref, vdc_ad);
-	}
-	else{ motor_inv_pwm(0, 0, 0, vdc_ad); }
+	// put the code to test in here and wave the timer
+	// please change actuator output function to output 0 (to inverter)
+	// this is test for timer not for exciting the system
 
 
 

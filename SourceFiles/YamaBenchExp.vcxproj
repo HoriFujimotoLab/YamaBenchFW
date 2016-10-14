@@ -145,6 +145,7 @@
     <ClCompile Include="ctrl_math.c" />
     <ClCompile Include="current_ctrl.c" />
     <ClCompile Include="main_exp.c" />
+    <ClCompile Include="main_pil.c" />
     <ClCompile Include="motion_ctrl.c" />
     <ClCompile Include="motor_enc.c" />
     <ClCompile Include="motor_pem.c" />

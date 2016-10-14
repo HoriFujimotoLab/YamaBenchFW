@@ -64,6 +64,9 @@
       <Filter>Source Files\control</Filter>
     </ClCompile>
     <ClCompile Include="main_exp.c" />
+    <ClCompile Include="main_pil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ctrl_math.h">
