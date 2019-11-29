@@ -1,0 +1,10 @@
+[COMPONENT]
+LIB	""	# Create:Thu Mar 17 18:26:24 2016
+OBJ	""	# Create:Thu Mar 17 18:26:24 2016
+HEADER	"ctrl_math.h" "current_ctrl.h" "motion_ctrl.h" "motor_enc.h" "motor_pem.h" "setup_adc.h" "system_data.h" "system_fsm.h"	# :Mon Nov 28 15:18:32 2016
+SRC	"ctrl_math.c" "current_ctrl.c" "motion_ctrl.c" "motor_enc.c" "motor_pem.c" "motorbench.c" "setup_adc.c" "system_data.c" "system_fsm.c"	# "ctrl_math.c" "current_ctrl.c" "main_time.c" "motion_ctrl.c" "motor_enc.c" "motor_pem.c" "setup_adc.c" "system_data.c" "system_fsm.c":Thu Mar 17 20:31:46 2016
+[CONFIGURE]
+PEOS_VER	"1_16"	# "1_17":Mon Apr 17 14:01:17 2017
+PROTECT	"OFF"	# Create:Thu Mar 17 18:26:24 2016
+STOP_RECONF	"OFF"	# Create:Thu Mar 17 18:26:24 2016
+TARGET_TYPE	"EXP3C6713"	# Create:Thu Mar 17 18:26:24 2016

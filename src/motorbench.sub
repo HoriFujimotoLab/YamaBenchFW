@@ -1,0 +1,12 @@
+EXTLIBS	+= 
+EXOBJS	+= 
+OBJS	+= ctrl_math.obj current_ctrl.obj motion_ctrl.obj motor_enc.obj motor_pem.obj motorbench.obj setup_adc.obj system_data.obj system_fsm.obj
+ctrl_math.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+current_ctrl.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+motion_ctrl.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+motor_enc.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+motor_pem.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+motorbench.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+setup_adc.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+system_data.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
+system_fsm.obj: ctrl_math.h current_ctrl.h motion_ctrl.h motor_enc.h motor_pem.h setup_adc.h system_data.h system_fsm.h
