@@ -23,7 +23,6 @@ void motion_ctrl_vpi(float vm_ref, float omega_m, float *iq_ref)
 	if (fabsf(*iq_ref) > I_PK) { *iq_ref = sign(*iq_ref) * I_PK; }		// limit torque
 }
 
-
 void motion_ctrl_pid(float x_ref, float x_msr, float *iq_ref)
 {
 	float x_err[1] = { 0.0 };
